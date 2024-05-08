@@ -8,6 +8,7 @@ body{
 
 }
 #navdiv{
+    display: flex;
     background-color: #ebcd39;
     height:7vh;
     align-items:center;
@@ -15,46 +16,85 @@ body{
     margin-top: -6px;
 }
 
-nav{
+
+#navdiv a{
+    color:yellow;
+    text-decoration:none;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+#navdiv a:hover{
+    background-color: black;
+}
+
+/* nav{
     display:flex;
     list-style: none;
     text-decoration: none;
     /* align-items:center;
     justify-content:flex-start; */
-    padding:5px;
-    margin-left: 949px;
+    /* padding:5px;
+    margin-left: 949px; */
     
-}
+*/
 
 
-li a{
+/* li a{
     padding:25px;
     justify-content: center;
-}
+} */
 
 #logo{
-    margin-left: -1276px;
+    display: flex;
+    /* margin-left: -1276px;
     margin-top: 2px;
     justify-content: center;
-    text-decoration: none;
+    text-decoration: none; */
 }
 
 .section{
     height:600px;
     background-color: rgb(193 176 114);
+    display: flex;
+    flex-wrap: wrap;
 
 }
+
+#wlcm{
+    text-align: center;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#mypic{
+    
+    /* width: 237px; */
+    /* height: 292px; */
+    background-color: #07b3a3;
+}
+
+
 
 #firstpic{
    
-    height: 292px;
-    margin-top: 143px;
-    margin-left: 20px;
-    width: 237px;
+    /* height: 292px; */
+    height:7%;
+    width:11%;
+    /* max-width: 100%;
+    max-height: 100%; */
+    /* object-fit: cover; */
+    margin-top: 11px;
+    margin-left: -1px;
+    position: fixed;
+    /* width: 237px; */
 }
 #wlcm{
     font-size:3rem;
-    margin-left: 500px;
+    margin-left: 221px;
+    margin-top: 93px;
+    font-size: 2.1rem;
+    text-align: center;
 }
 
 .subsection{
@@ -257,13 +297,42 @@ margin-top: -86px;
 
 /* --------------------Responsive design------------- */
 
-@media screen and (max-width:600px){
+@media only screen and (max-width: 600px){
     .section{
         width: 100%;
+        background-color: blueviolet;
     }
 
-    .navdiv{
+    #navdiv{
         width: 100%;
-        background-color: red;
+        background-color: rgb(43, 255, 0);
     }
+
+    .subsection{
+        background-color: red;
+        width: 100%;
+        margin-left: 4px;
+        margin-top: 142px;
+    }
+
+    #wlcm{
+        margin-left:221px;
+        margin-top: 93px;
+        font-size: 2.1rem;
+        /* align-items: center; */
+        text-align: center;
+
+    }
+
+    #firstpic{
+        float: left;
+       margin-left:-1px;
+       height: 7%;
+       width: 11%;
+       margin-top: 11px;
+       position: fixed;
+
+    }
+
+
 }
